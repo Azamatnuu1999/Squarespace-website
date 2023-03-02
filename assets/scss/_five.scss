@@ -1,0 +1,33 @@
+.five{
+    background-color: #f5f5f5;
+    .contain{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .fifty{
+            width: 48%;
+            &__h2{
+                font-weight: 500;
+            }
+        }
+    }
+}
+
+@media(max-width:615px){
+    .five{
+        .contain{
+            flex-wrap: wrap;
+            text-align: center;
+            .fifty{
+                width: 100%;
+                &__h2{
+                    font-weight: 500;
+                    font-size: 22px;
+                }
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

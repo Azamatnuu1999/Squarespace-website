@@ -1,0 +1,53 @@
+.eight{
+    padding: 50px 0;
+    background-color: black;
+    .contain{
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        .fifty{
+            width: 48%;
+            &__h1{
+                color: white;
+            }
+            &__ol{
+                color: white;
+                li{
+                    margin: 14px 0;
+                    color: white;
+                }
+            }
+            &__a{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+@media(max-width:800px){
+    .eight{
+        .contain{
+            flex-wrap: wrap;
+            .fifty{
+                width: 90%;
+                margin: 0 auto;
+                text-align: center;
+                &__h1{
+                    color: white;
+                    font-size: 26px;
+                }
+                &__ol{
+                    color: white;
+                    li{
+                        margin: 14px 0;
+                        color: white;
+                    }
+                }
+                &__a{
+                    text-decoration: underline;
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}

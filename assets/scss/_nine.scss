@@ -1,0 +1,181 @@
+.nine{
+    background-color: #f5f5f5;
+    padding: 50px 0;
+    .title{
+        margin-left: 10%;
+    }
+    .contain{
+        background-color: #f5f5f5;
+        ul{
+            display: flex;
+            justify-content: space-between;
+            li{
+                sup{
+                    font-size: 15px;
+                }
+                .bottom{
+                    color: #0888C8;
+                }
+                span{
+                    font-size: 14px;
+                }
+                text-align: center;
+                line-height: 32px;
+            }
+        }
+        ul > li:nth-child(1){
+            width: 36%;
+            text-align: start;
+        }
+        .first ~ ul{
+            padding: 0;
+            border-bottom: 1px solid grey;
+        }
+        .last{
+            border: none !important;
+            li{
+                width: 30%;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    li{
+                        width: 100%;
+                        text-align: start;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width:600px){
+    .nine{
+        padding-bottom: 0;
+        .title{
+            text-align: center;
+        }
+        .contain{
+            ul{
+                li{
+                    *{
+                        margin: 0;
+                    }
+                    sup{
+                        font-size: 10px;
+                    }
+                    h2{
+                        font-size: 18px;
+                    }
+                    .bottom{
+                        color: #0888C8;
+                    }
+                    span{
+                        font-size: 9px;
+                    }
+                    line-height: 20px;
+                    font-size: 10px;
+                }
+            }
+            ul > li:nth-child(1){
+                width: 36%;
+                text-align: start;
+            }
+            .first ~ ul{
+                padding: 0;
+                border-bottom: 1px solid grey;
+            }
+            .last{
+                border: none !important;
+                li{
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        li{
+                            width: 100%;
+                            text-align: start;
+                        }
+                    }
+                }
+                .second{
+                    width: 48% !important;
+                }
+                .first{
+                    display: none;
+                }
+            }
+            h3{
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@media(max-width:400px){
+    .nine{
+        padding-bottom: 0;
+        margin-bottom: 0;
+        .title{
+            text-align: center;
+        }
+        .contain{
+            ul > li:nth-child(1){
+                display: none;
+            }
+            ul{
+                li{
+                    *{
+                        margin: 0;
+                    }
+                    sup{
+                        font-size: 10px;
+                    }
+                    h2{
+                        font-size: 18px;
+                    }
+                    .bottom{
+                        color: #0888C8;
+                    }
+                    span{
+                        font-size: 9px;
+                    }
+                    line-height: 20px;
+                    font-size: 10px;
+                }
+            }
+            ul > li:nth-child(1){
+                width: 36%;
+                text-align: start;
+            }
+            .first ~ ul{
+                padding: 0;
+                border-bottom: 1px solid grey;
+            }
+            .last{
+                border: none !important;
+                flex-wrap: wrap;
+                li{
+                    margin: 0;
+                    padding: 10px 0;
+                    ul{
+                        display: flex;
+                        flex-direction: column;
+                        li{
+                            width: 100%;
+                            text-align: start;
+                        }
+                    }
+                }
+                .second{
+                    width: 98% !important;
+                }
+                .first{
+                    display: none;
+                }
+            }
+            h3{
+                font-size: 16px;
+            }
+        }
+    }
+}

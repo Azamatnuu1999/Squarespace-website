@@ -1,0 +1,97 @@
+.ten{
+    background-color: black;
+    padding: 60px 0;
+    .title{
+        text-align: center;
+        &__h1{
+            color: white;
+            margin-bottom: 60px;
+        }
+    }
+    .contain{
+        .accordion{
+            *{
+                color: white !important;
+            }
+            li{
+                border-bottom: 1px solid grey;
+                line-height: 46px !important;
+            }
+        }
+    }
+    .containn{
+        width: 80%;
+        margin: 50px auto;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .fifty{
+            width: 48%;
+            color: white;
+            a{
+                font-size: 11px;
+                text-decoration: underline;
+            }
+            &__h2{
+                color: white;
+            }
+        }
+        button{
+            padding: 9px 20px;
+            border: 1px solid white;
+            background-color: white;
+        }
+        button:hover{
+            background-color: black;
+            color: white;
+            border: 1px solid white;
+        }
+        h2{
+            color: white;
+        }
+    }
+}
+
+@media(max-width:615px){
+    .ten{
+        .title{
+            &__h1{
+                font-size: 26px;
+            }
+        }
+        .contain{
+            .accordion{
+                *{
+                    font-size: 14px;
+                }
+            }
+        }
+        .containn{
+            text-align: center;
+            .fifty{
+                width: 90%;
+                margin: 0 auto;
+                text-align: center;
+            }
+            button{
+                padding: 9px 20px;
+                border: 1px solid white;
+                background-color: white;
+            }
+            button:hover{
+                background-color: black;
+                color: white;
+                border: 1px solid white;
+            }
+            h2{
+                color: white;
+                text-align: center;
+                font-size: 24px;
+            }
+            .button{
+                margin: 0 auto;
+            }
+        }
+    }
+}

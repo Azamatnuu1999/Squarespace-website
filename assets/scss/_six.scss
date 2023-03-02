@@ -1,0 +1,61 @@
+.six{
+    background-color: #60777C;
+    padding: 70px 0;
+    .contain{
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        .fifty{
+            width: 48%;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            position: relative;
+            a{
+                color: grey;
+            }
+            .bottom{
+                position: absolute;
+                right: 10%;
+                bottom: -20%;
+                span:hover{
+                    cursor: pointer;
+                    color: grey;
+                }
+            }
+            
+        }
+
+    }
+}
+
+@media(max-width:650px){
+    .six{
+        background-color: #60777C;
+        padding: 70px 0;
+        .contain{
+            flex-wrap: wrap;
+            .fifty{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                position: relative;
+                a{
+                    color: grey;
+                }
+                .bottom{
+                    position: absolute;
+                    right: 10%;
+                    bottom: -20%;
+                    span:hover{
+                        cursor: pointer;
+                        color: grey;
+                    }
+                }
+                
+            }
+    
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.third1{
+    background-image: url(../media/Rectangle\ \(1\).png);
+    .contain{
+        padding: 120px 0;
+        text-align: center;
+        color: white;
+        &__h2{
+            color:white;
+        }
+        &__a{
+            text-decoration: underline;
+        }
+        &__a:hover{
+            color: bisque;
+        }
+    }
+}
